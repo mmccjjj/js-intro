@@ -21,6 +21,8 @@ function ale(label, message){
 
 
 
+
+
     /* ------------------------------------------------------------------------------------ */
 
 
@@ -133,4 +135,61 @@ function printLion(id, name, role){
     let text = name + " is "+ role + " in 'The Lion King'";
 
     printInParagraph(id,text);
+}
+
+
+
+function noteInBuchstabe(id, note){
+
+    if (note >= 90) {
+        buchstabenNote = "A";
+    }
+    
+    else if (note < 90 && note >= 80) {
+        buchstabenNote = "B";
+    }
+
+    else if (note < 80&& note >= 70) {
+        buchstabenNote = "C";
+    }
+
+    else if (note < 70&& note >= 60) {
+        buchstabenNote = "D";
+    }
+
+    else if (note >= 0) {
+        buchstabenNote = "F";
+    }
+
+    else {
+        buchstabenNote = null;
+    }
+
+    /* printInParagraph(id, buchstabenNote); */
+
+}
+
+
+
+function wettervorhersage(id, temperatur){
+
+
+    if (temperatur > 25) {
+        wetter = "warm";
+    }
+
+    else if (temperatur >= 10) {
+        wetter = "angenehm";
+    }
+
+    else if (temperatur < 10) {
+        wetter = "kalt";
+    }
+    
+    else {
+        wetter = null;
+    }
+
+    printInParagraph(id, wetter);
+
 }

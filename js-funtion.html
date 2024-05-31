@@ -21,9 +21,19 @@
     <P id="test2"></P>
     <p id="test3"></p>
 
+    <form>
+        <label for="note1">Note 1</label><br>
+        <input type="number" id="note1"><br>
+        <label for="note1Buchstabe">Note 1 Buchstabe</label><br>
+        <div id="ergebnis1"></div><br>
+
+<button type="button" onclick="noteUmrechnen(1)">Umwandeln</button>
+
+    </form>
+
     <script src="/main-2.js"></script> 
 
-    <script>
+<!--     <script>
         let nachricht = "fertig- Stimmt das?";
         console.log(nachricht);
 
@@ -35,6 +45,11 @@
 
         printLion("test", supportName, supportRole)
 
+    </script>  -->
+
+<!--     <script>
+        noteInBuchstabe("test", 90);
+        wettervorhersage("test2",25)
     </script>
 
     
