@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <div id="content">
+
+        <div>
+                <form id="notenrechner">
+                    <h1>Notenrechner</h1>
+
+                    
+                    <label class="pos" id="label1" for="note1">Note 1</label><br>
+                    <input class="pos width" type="number" id="note1"><br>
+                    <div class="layout" id="ergebnis1"></div><br>
+
+                    <label class="pos" id="label2" for="note2">Note 2</label><br>
+                    <input class="pos width" type="number" id="note2"><br>
+                    <div class="layout" id="ergebnis2"></div><br>
+
+                    <label class="pos" id="label3" for="note3">Note 3</label><br>
+                    <input class="pos width" type="number" id="note3"><br>
+                    <div class="layout" id="ergebnis3"></div><br>
+
+                    <label class="pos" id="label4" for="note4">Note 4</label><br>
+                    <input class="pos width" type="number" id="note4"><br>
+                    <div class="layout" id="ergebnis4"></div><br>
+
+                    <label class="pos" id="label5" for="note5">Note 5</label><br>
+                    <input class="pos width" type="number" id="note5"><br>
+                    <div class="layout" id="ergebnis5"></div><br>
+
+                    <label class="pos" id="label6" for="note6">Note 6</label><br>
+                    <input class="pos width" type="number" id="note6"><br>
+                    <div class="layout" id="ergebnis6"></div><br>
+
+
+
+                <button type="button" onclick="noteUmrechnen(6)">Umwandeln</button>
+
+                </form>
+
+        </div>
+
+        <div id="wetter">
+
+            <h1>Wetter</h1>
+
+            <div id="pics">
+                <img id="hot" src="/test/img/hot.jpg" alt="">
+                <img id="nice" src="/test/img/nice.jpg" alt="">
+                <img id="cold" src="/test/img/cold.jpg" alt="">
+                    
+            </div>
+
+                <div id="schieberegler">
+
+                    <input type="range" min="-5" max="45" value="20" class="slider" id="schiere">
+                    <p><span id="demo"></span></p>
+
+                </div>
+        </div>
+    </div>
+    <script src="test.js"></script> 
+    <script>wetter();</script>
+    
+</body>
+</html>
