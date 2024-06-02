@@ -19,15 +19,15 @@ if (note >= 90) {
     buchstabenNote = "A";
 }
 
-else if (note < 90 && note >= 80) {
+else if (note >= 80) {
     buchstabenNote = "B";
 }
 
-else if (note < 80&& note >= 70) {
+else if (note >= 70) {
     buchstabenNote = "C";
 }
 
-else if (note < 70&& note >= 60) {
+else if (note >= 60) {
     buchstabenNote = "D";
 }
 
