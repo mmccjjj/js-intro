@@ -4,8 +4,8 @@ function noteUmrechnen(numEingabefelder){
 
     let noteElement = document.getElementById("note" + i);
     let ergebnisElement = document.getElementById("ergebnis"+ i);
-    let noteWert = noteElement.valueAsNumber;
-    let ergebnis = noteInBuchstabetest(noteWert);
+    let note = noteElement.valueAsNumber;
+    let ergebnis = noteInBuchstabetest(note);
     ergebnisElement.innerText= ergebnis;
     }
 }
