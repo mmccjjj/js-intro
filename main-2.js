@@ -193,3 +193,13 @@ function wettervorhersage(id, temperatur){
     printInParagraph(id, wetter);
 
 }
+let text = " ";
+let i = 1;
+while (i < 11) {
+  text += " Die Zahl ist " + i;
+  i++;
+}
+
+
+
+console.log(text)

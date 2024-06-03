@@ -7,7 +7,7 @@
 let erreichtePunkte = 15;
 let maxPunkte = 15;
 
-let prüfungBestanden;
+let prüfungBestanden= erreichtePunkte=== maxPunkte;
 
 // -------------------------------------------------------------------------------------------------
 // Prüfe ob genug Geld für ein Kaffe vorhanden ist
@@ -16,7 +16,7 @@ let kaffeePreis = 2.5;
 let geldImPortemonnaie = 1.5;
 
 // Schreibe den Vergleichsoperator in die Variable kaffeeKauf um zu prüfen ob genug Geld für einen Kaffee vorhanden ist.
-let kaffeeKauf;
+let kaffeeKauf= kaffeePreis=== geldImPortemonnaie;
 
 /* ===================================================================================================
  Ü2 | Ungleichheitsoperatoren
@@ -29,7 +29,7 @@ let onlineStatus = false;
 let istOnline = true;
 
 // Schreibe den Vergleichsoperator in die Variable istAngemeldet um zu prüfen ob die Person sich schon angemeldet hat.
-let istAbgemeldet;
+let istAbgemeldet= onlineStatus!= istOnline;
 
 /* ===================================================================================================
   Ü3 | Größer- und Kleiner-Operatoren
@@ -41,7 +41,7 @@ let alter = 18;
 let volljährig = 18;
 
 // Schreibe den Vergleichsoperator in die Variable volljährigGleich um zu prüfen ob die Person volljährig ist.
-let istVolljährig;
+let istVolljährig= alter>= volljährig;
 
 // ---------------------------------------------------------------------------------------------------
 // Prüfe ob du genug Stühle für alle Personen hast
@@ -49,7 +49,7 @@ let stühle = 5;
 let personen = 10;
 
 // Schreibe den Vergleichsoperator in die Variable stühleGenug um zu prüfen ob genug Stühle für alle Personen vorhanden sind.
-let stühleGenug;
+let stühleGenug= stühle>= personen;
 
 // -------------------------------------------------------------------------------------------------
 // Prüfe ob die Person genug Geld für ein Ticket hat
@@ -57,7 +57,7 @@ let ticketPreis = 10;
 let sparKonto = 15;
 
 // Schreibe den Vergleichsoperator in die Variable ticketKauf um zu prüfen ob genug Geld für ein Ticket vorhanden ist.
-let istTicketKaufMöglich;
+let istTicketKaufMöglich= ticketPreis<= sparKonto;
 
 /* ===================================================================================================
 END of working area, please write your code above this area to avoid potential conflicts

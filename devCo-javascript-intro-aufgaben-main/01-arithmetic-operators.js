@@ -6,19 +6,20 @@ let zahl1 = 10;
 let zahl2 = 5;
 
 // Eine Addition
-let summe;
+let summe = zahl1+ zahl2;
+
 
 // Eine Subtraktion
-let differenz;
+let differenz= zahl1- zahl2;
 
 // Eine Multiplikation
-let produkt;
+let produkt= zahl1* zahl2;
 
 // Eine Division
-let quotient;
+let quotient= zahl1/ zahl2;
 
 // Ein Modulo
-let rest;
+let rest= zahl1% zahl2;
 
 /* ===================================================================================================
  Ü2 | Inkrement und Dekrement
@@ -26,11 +27,11 @@ let rest;
 
 // Inkrementiere die Zahl um 1
 let inkrement = 10;
-inkrement;
+inkrement = ++inkrement;
 
 // Dekrementiere die Zahl um 1
 let dekrement = 10;
-dekrement;
+dekrement = --dekrement;
 
 /* ===================================================================================================
  Ü3 | Restwert berechnen
@@ -45,7 +46,7 @@ dekrement;
 let zahlModulo1 = 13;
 let zahlModulo2 = 4;
 
-let restwertModulo;
+let restwertModulo= zahlModulo1% zahlModulo2;
 
 /* ===================================================================================================
  Ü4 | Durchschnitt berechnen
@@ -57,10 +58,10 @@ let note3 = 6;
 let note4 = 5;
 
 // Summiere alle Noten
-let summeNoten;
+let summeNoten= note1+ note2+ note3+ note4;
 
 // Berechne den Durchschnitt (Dividiere die Summe der Noten durch die Anzahl der Noten (4))
-let durchschnitt;
+let durchschnitt= summeNoten/ 4;
 
 /* ===================================================================================================
  Ü5 | Geschwindigkeit berechnen
@@ -70,7 +71,7 @@ let strecke = 240; // in Kilometer
 let zeit = 2; // in Stunden
 
 // Berechne die Geschwindigkeit Strecke durch Zeit
-let geschwindigkeit;
+let geschwindigkeit= strecke/ zeit;
 
 /* ===================================================================================================
  Ü6 | Klammerberechnung um die erreichte Punktzahl in Prozent auszurechnen
@@ -80,7 +81,7 @@ let punkte = 150;
 let maxPunkte = 200;
 
 // Berechne die erreichte Punktzahl in Prozent, die ersten beiden Variablen dividierst du in einer Klammer und multiplizierst das Ergebnis mit 100
-let prozent;
+let prozent= (punkte/ maxPunkte)* 100;
 
 /* ===================================================================================================
 END of working area, please write your code above this area to avoid potential conflicts

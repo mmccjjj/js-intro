@@ -7,7 +7,7 @@
 let erreichtePunkte = 15;
 let maxPunkte = 15;
 
-let prüfungBestanden;
+let prüfungBestanden= erreichtePunkte=== maxPunkte;
 
 // -------------------------------------------------------------------------------------------------
 // Prüfe ob genug Geld für ein Kaffe vorhanden ist
@@ -16,7 +16,7 @@ let kaffeePreis = 2.5;
 let geldImPortemonnaie = 1.5;
 
 // Schreibe den Vergleichsoperator in die Variable kaffeeKauf um zu prüfen ob genug Geld für einen Kaffee vorhanden ist.
-let kaffeeKauf;
+let kaffeeKauf= kaffeePreis<= geldImPortemonnaie;
 
 /* ===================================================================================================
  Ü2 | Ungleichheitsoperatoren
@@ -70,10 +70,10 @@ let akkuverbrauchVideoProMinute = 2;
 let videoLängeInMinuten = 6;
 
 // Berechne Akkuverbrauch pro Minute multipliziert mit der Videolänge
-let videoAkkuVerbrauch;
+let videoAkkuVerbrauch= akkuverbrauchVideoProMinute* videoLängeInMinuten;
 
 // Prüfe nun ob der akkuLaptop grösser oder gleich dem videoAkkuVerbrauch ist
-let genugAkku;
+let genugAkku= akkuLaptop>= videoAkkuVerbrauch;
 
 /* ===================================================================================================
 END of working area, please write your code above this area to avoid potential conflicts
