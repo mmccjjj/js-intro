@@ -197,9 +197,14 @@ console.log("New Word: ", capitalizeFirstLetter("hello")); // Example: Output sh
 // Write the function so that it adds up all the numbers in the list and gives you the total.
 
 function sumArray(arr) {
-  // Write your code here
 
-  return;
+  let sum= 0
+
+  arr.forEach(num => {
+    sum+= num;
+  })
+
+  return sum;
 }
 console.log("Sum: ", sumArray([1, 2, 3, 4, 5])); // Example: Output should be 15
 
@@ -208,9 +213,16 @@ console.log("Sum: ", sumArray([1, 2, 3, 4, 5])); // Example: Output should be 15
 // Write the function so that it tells you the average (mean) of all the numbers in the list.
 
 function averageArray(arr) {
-  // Write your code here
+  let sum= 0
 
-  return;
+  arr.forEach(num => {
+    sum+= num;
+  })
+
+  result= sum/ arr.length
+  
+
+  return result;
 }
 console.log("Avarage: ", averageArray([2, 4, 6, 8, 10])); // Example: Output should be 6
 
@@ -220,10 +232,50 @@ console.log("Avarage: ", averageArray([2, 4, 6, 8, 10])); // Example: Output sho
 // Write the function so that it pretends they're playing rock-paper-scissors and tells you who wins or if it's a tie.
 
 function rockPaperScissors(player1, player2) {
-  // Write your code here
-  return;
+
+  if (player1== "rock" && player2== "paper"){
+    let rpsresult= "Player 2 wins (Paper over Rock)";
+    return rpsresult;
+  }  
+  
+  else if (player1== "rock" && player2== "scissors"){
+    let rpsresult= "Player 1 wins (Rock over Scissors)";
+    return rpsresult;
+  }  
+
+  else if (player1== "scissors" && player2== "rock"){
+    let rpsresult= "Player 2 wins (Rock over Scissors)";
+    return rpsresult;
+  } 
+
+  else if (player1== "scissors" && player2== "paper"){
+    let rpsresult= "Player 1 wins (Scissors over Paper)";
+    return rpsresult;
+  }
+  
+  else if (player1== "paper" && player2== "rock"){
+    let rpsresult= "Player 1 wins (Paper over Rock)";
+    return rpsresult;
+  }
+
+  else if (player1== "paper" && player2== "scissors"){
+    let rpsresult= "Player e wins (Scissors over Paper)";
+    return rpsresult;
+  }
+
+  else if (player1===  player2){
+    let rpsresult= "Draw, next Game";
+    return rpsresult;
+  }
+
+  else{
+    let rpsresult= "Error"
+    return rpsresult;
+  }
+
+
 }
-console.log("Game result: ", rockPaperScissors("rock", "paper")); // Example: Output should be "Player 2 wins!"
+console.log("Game result: ", rockPaperScissors("rock", "scissors")); // Example: Output should be "Player 2 wins!"
 
 //----------------------------------
 
@@ -231,8 +283,23 @@ console.log("Game result: ", rockPaperScissors("rock", "paper")); // Example: Ou
 // Write the function so that it randomly gives you an answer like a magic 8-ball toy (e.g., "Yes", "No", "Ask again later").
 
 function magic8Ball() {
-  // Write your code here
-  return;
+  
+  let value=  Math.floor(Math.random() * 3)+1;
+
+  if (value=== 1){
+    let result= "Yes";
+    return result;
+  }
+  
+  else if(value=== 2){
+    let result= "No";
+    return result;
+  }
+
+else{ 
+  let result= "Ask again Later";
+  return result;
+}
 }
 console.log("Magic8Ball Spoke: ", magic8Ball()); // Example: Output should be one of the responses like "Yes" or "No"
 
@@ -243,8 +310,10 @@ console.log("Magic8Ball Spoke: ", magic8Ball()); // Example: Output should be on
 // Formula weight devided by (height multiplied by height).
 
 function calculateBMI(weight, height) {
-  // Write your code here
-  return;
+
+  let result= weight/(height*height);
+  let resultFixed= result.toFixed(2);
+  return resultFixed;
 }
 console.log("The BMI is: ", calculateBMI(70, 1.75)); // Example: Output should be around 22.86
 
@@ -255,8 +324,8 @@ console.log("The BMI is: ", calculateBMI(70, 1.75)); // Example: Output should b
 // Formula: (Fareneit minus 32) multiplied by (5 devided by 9)
 
 function fahrenheitToCelsius(fahrenheit) {
-  // Write your code here
-  return;
+  let celcius= ((fahrenheit-32) * (5/9))
+  return celcius;
 }
 console.log("Celcius: ", fahrenheitToCelsius(140)); // Example: Output should be around 20
 
@@ -266,8 +335,15 @@ console.log("Celcius: ", fahrenheitToCelsius(140)); // Example: Output should be
 // Write the function so that it counts and tells you the number of vowels (a, e, i, o, u) in what you gave.
 
 function countVowels(str) {
-  // Write your code here
-  return;
+ let vovels= "aAeEiIoOuU";
+ let vovelsCount= 0;
+    for(let i= 0; i< str.length;i++){
+      if (vovels.indexOf(str[i]) !== -1){
+        vovelsCount++;
+      }
+    }
+      
+  return vovelsCount;
 }
 console.log("Vovel Count: ", countVowels("Hello, world!")); // Example: Output should be 3
 
@@ -276,14 +352,24 @@ console.log("Vovel Count: ", countVowels("Hello, world!")); // Example: Output s
 // Exercise 24: Build a function named 'emojiTranslator' that asks for some text.
 // Write the function so that it replaces certain words with emojis and gives you the translated text.
 
+
+/* funktioniert noch nicht! */
+
 function emojiTranslator(text) {
-  // Write your code here
+
   const translation = {
     hello: "👋",
     world: "🌍",
     love: "❤️",
   };
-  return;
+  let words= text.split(" ");
+  for (let i= 0; i< words.length; i++){
+    let word= words[i]
+    if (emojiTranslator.hasOwnProperty(word)){
+      words[i] =emojiTranslator[word];
+    }
+  }
+  return words.join(" ");
 }
 console.log("Output: ", emojiTranslator("Hello world I love coding!")); // Example: Output should be "👋 🌍 I ❤️ coding!"
 
